@@ -1,21 +1,40 @@
-# API-Star-Wars-
-• Desenvolvida em Nodejs;
+# Sobre o Projeto
 
-• npm run start:dev  => Inicia a aplicação;
+# API Star Wars (https://swapi.dev/)
 
-•	Ao iniciar a aplicação, é carregado em memória a lista de filmes; 
+## Tecnologias utilizadas:
+| Ferramenta | Descrição |
+| --- | --- |
+| `javascript` | Linguagem de programação |
+| `nodejs` | Ambiente de execução do javascript|
+| `express` | Framework NodeJS |
+| `nodemon` | Dependência que observa as atualizações realizadas nos documentos para rodar o servidor automaticamente|
+| `npm` | Gerenciador de pacotes|
+ `Insomnia ou Postman` | Interface gráfica para realizar os testes|
+ 
+ ## Métodos
+Requisições para a API devem seguir os padrões:
+| Método | Descrição |
+|---|---|
+| `GET` | Retorna informações de um ou mais registros. |
+| `PATCH` | Atualiza um registro. |
 
-ENDPOINTS:
+### Como executar
+* Clone o repositório
+* Instale as dependências com ```npm install```
+* Inicie o servidor com ```npm run start:dev```
+* Ao iniciar a aplicação será carregado em memória a lista de filmes;
 
-•	PATCH /:episode_id  => endpoint onde é possível alterar a descrição de um filme em memória;
+ ### EndPoints 
+ Método GET
+- [x]  **"/"** Deverá retornar todas os filmes da saga.
+- [x]  **"/:id"** Deverá retornar informações de um filme específico.
+<br>
 
-•	GET / => endpoint onde é possível listar os filmes da saga; 
-	
-• GET /:id	=> endpoint onde é possível exibir detalhes de um filme; 
+Método PATCH
+- [x]  "**/:episode_id**" Deverá alterar a descrição de um filme em memória
+ <br>
 
-• GET /:id => endpoint onde é possível detalhar um filme especifico;
 
-•	Criado um mecanismo de controle de alteração onde toda vez que uma descrição é alterada, o campo versão do filme deve ser alterado de forma incremental;
 
-•	A versão do filme retorna junto com a lista do filme;
-
+```jsx
